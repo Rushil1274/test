@@ -1,0 +1,128 @@
+    1  apt update -y
+    2  yum update -y
+    3  wget https://packages.chef.io/files/stable/chef-workstation/0.4.2/el/7/chef-workstation-0.4.2-1.el6.x86_64.rpm
+    4  ls
+    5  yum install hef-workstation-0.4.2-1.el6.x86_64.rpm
+    6  yum install chef-workstation-0.4.2-1.el6.x86_64.rpm
+    7  which chef
+    8  chef -v
+    9  mkdir cookbooks
+   10  ls
+   11  cd cookbooks/
+   12  ls
+   13  chef generate cookbook test-cookbook
+   14  ls
+   15  yum install tree -y
+   16  tree
+   17  cd test-cookbook/
+   18  chef generate recipe test-recipe
+   19  tree
+   20  cd ..
+   21  nano test-cookbook/recipes/test-recipe.rb 
+   22  chef exec ruby -c test-cookbook/recipes/test-recipe.rb 
+   23  chef-client -zr "recipe[test-cookbook::test-recipe]"
+   24  ls /
+   25  chef-client -zr "recipe[test-cookbook::test-recipe]"
+   26  nano test-cookbook/recipes/test-recipe.rb 
+   27  chef-client -zr "recipe[test-cookbook::test-recipe]"
+   28  ls /
+   29  history
+   30  ls /
+   31  cat /myfile 
+   32  cd test-cookbook/
+   33  chef generate recipe recipe2
+   34  ls
+   35  cd ..
+   36  ls
+   37  nano test-cookbook/recipes/recipe2.rb 
+   38  chef exec ruby -c test-cookbook/recipes/recipe2.rb 
+   39  ]"]"
+   40  chef-client -zr "recipe[test-cookbook::recipe2]"
+   41  ls /
+   42  cat /myfile
+   43  cat /myfile2
+   44  chef generate cookbook apache-cookbook
+   45  cd apache-cookbook/
+   46  chef generate recipe apacherecipe
+   47  tree
+   48  cd ..
+   49  nano apache-cookbook/recipes/apacherecipe.rb 
+   50  chef exec ruby -c apache-cookbook/recipes/apacherecipe.rb 
+   51  chef-client -zr "recipe[apache-cookbook::apacherecipe]"
+   52  ipconfig
+   53  ip add
+   54  ipsec
+   55  ip addr
+   56  history
+   57  history > chef1.txt
+   58  ls
+   59  cat chef1
+   60  cat chef1.txt 
+   61  cd git
+   62  nano gitfile.txt
+   63  git status
+   64  git add .
+   65  git status
+   66  git reset gitfile.txt
+   67  git status
+   68  git add .
+   69  git diff
+   70  git reset gitfile.txt
+   71  git diff
+   72  nano gitfile.txt
+   73  git diff
+   74  git status 
+   75  git add .
+   76  git commit -m "First git file"
+   77  git branch
+   78  git branch testbranch
+   79  git branch
+   80  git checkout
+   81  git branch
+   82  git log
+   83  git checkout testbranch 
+   84  git log
+   85  git branch 
+   86  git checkout master 
+   87  git push gitfile.txt master 
+   88  git push gitfile.txt testbranch  
+   89  git push master
+   90  git push --set-upstream master master
+   91  cd
+   92  git push gitfile.txt master 
+   93  git push git master 
+   94  git push master 
+   95  cd git
+   96  cd
+   97  git branch -a
+   98  git branch 
+   99   branch 
+  100  cd git
+  101  git branch 
+  102  git remote add origin https://github.com/Rushil1274/test.git
+  103  git remote -v
+  104  git push origin master
+  105  git remote set-url origin https://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@github.com/Rushil1274/test.git
+  106  git push origin master
+  107  git remote set-url origin https://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@github.com/Rushil1274/test.git
+  108  git push origin master
+  109  git remote set-url origin git@github.com:Rushil1274/test.git
+  110  git push origin master
+  111  ls -l ~/.ssh
+  112  ssh-keygen -t rsa -b 4096 -C "rushilpanchal730@gmail.com"
+  113  eval "$(ssh-agent -s)"
+  114  ssh-add ~/.ssh/id_rsa
+  115  cat ~/.ssh/id_rsa
+  116  cat ~/.ssh/id_rsa.pub
+  117  chmod 600 ~/.ssh/id_rsa
+  118  git push origin master
+  119  git remote set-url origin master@github.com:Rushil1274/test.git
+  120  git push origin master
+  121  git remote set-url origin git@github.com:Rushil1274/test.git
+  122  git push origin master
+  123  cat ~/.ssh/id_rsa.pub
+  124  git push origin master
+  125  git merge main
+  126  git checkout main
+  127  history
+  128  history > gitcommand.txt
